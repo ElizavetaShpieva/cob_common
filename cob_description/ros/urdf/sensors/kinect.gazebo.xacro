@@ -18,7 +18,7 @@
           <minAngle>-31.63</minAngle>
           <maxAngle>31.63</maxAngle>
           
-          <minRange>1.00</minRange> <!--0.8m min calibrated range-->
+          <minRange>0.5</minRange> <!--0.8m min calibrated range-->
           <maxRange>5.0</maxRange> <!--5.0m max calibrated range-->
           <resRange>0.010</resRange>
           <updateRate>10</updateRate> <!-- true value 30Hz -->
@@ -29,7 +29,7 @@
           <verticalMaxAngle>25.74</verticalMaxAngle>
 
           <controller:gazebo_ros_block_laser name="kinect_controller" plugin="libgazebo_ros_block_laser.so">
-            <gaussianNoise>0.005</gaussianNoise>
+            <gaussianNoise>0.0005</gaussianNoise>
             <alwaysOn>true</alwaysOn>
             <updateRate>10</updateRate> <!-- true value 30Hz -->
             <topicName>${ros_topic}</topicName>
